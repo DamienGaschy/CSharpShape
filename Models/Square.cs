@@ -6,20 +6,17 @@ using System.Threading.Tasks;
 
 namespace CSharpShape.Models
 {
-    public class Triangle : Shape
+    public class Square : Shape
     {
-        public Triangle(double Height, double Width)
+        public Square(double Height)
         {
             this.Height = Height;
-            this.Width = Width;
         }
         public double Height { get; set; }
-        public double Width { get; set; }
         public override double Area()
         {
-            Console.WriteLine("L'aire du Triangle est de " + (Height * Width) / 2);
-            return (Height * Width) / 2;
+            Console.WriteLine("L'aire du Carré est de " + Height * Height);
+            return Height * Height;
         }
     }
 }
-
